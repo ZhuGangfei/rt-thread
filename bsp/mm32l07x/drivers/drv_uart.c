@@ -148,9 +148,9 @@ void UART2_IRQHandler(void)
     uart = &uart2;
     /* enter interrupt */
     rt_interrupt_enter();
-    if (UART_GetITStatus(uart->uart_device, UART_IT_RXIEN) != RESET)
+    if (UART_GetITStatus(uart->uart, UART_IT_RXIEN) != RESET)
     {
-        UART_ClearITPendingBit(uart->uart_device, UART_IT_RXIEN);
+        UART_ClearITPendingBit(uart->uart, UART_IT_RXIEN);
         rt_hw_serial_isr(&serial2, RT_SERIAL_EVENT_RX_IND);
     }
     if (UART_GetITStatus(uart->uart, UART_IT_TXIEN) != RESET)
