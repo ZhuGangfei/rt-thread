@@ -1,11 +1,11 @@
 /*
- * Copyright (c) 2006-2018, RT-Thread Development Team
+ * Copyright (c) 2017-2019, MindMotion AE Team
  *
  * SPDX-License-Identifier: Apache-2.0
  *
  * Change Logs:
  * Date           Author       Notes
- * 2013-11-15     bright       the first version
+ * 2019-03-13     henryhuang   first version
  */
 
 #include <HAL_device.h>
